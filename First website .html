@@ -1,0 +1,17 @@
+ <!DOCTYPE html>  
+<html>
+ <head> 
+<title>Color Changing Name</title>
+  <script>  
+    function changeColor() {
+      var nameElement = document.getElementById('name');
+      var color = prompt("Enter a color name or hex code (e.g., red, #00FF00):");
+      nameElement.style.color = color;
+    }
+  </script>
+</head>
+<body> 
+  <h1 id="name">Mudassir</h1> 
+  <button onclick="changeColor()">Change color</button>
+</body>
+</html>
