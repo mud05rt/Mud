@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Second Page</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <p id="displayName"></p>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get("name");
+        document.getElementById("displayName").innerText = "Your name is: " + name;
+    </script>
+</body>
+</html>
